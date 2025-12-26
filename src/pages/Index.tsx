@@ -1,13 +1,21 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+/**
+ * Index Page
+ * 
+ * The main entry point of our Music Player app.
+ * This page simply renders the MusicPlayer component.
+ */
+
+import MusicPlayer from "@/components/MusicPlayer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main>
+      {/* 
+        The MusicPlayer component handles all the player logic and UI.
+        Keeping the Index page simple makes the code easier to understand.
+      */}
+      <MusicPlayer />
+    </main>
   );
 };
 
