@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  background: #000;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+}
+
+.screen {
+  display: none;
+  height: 100vh;
+}
+
+.screen.active {
+  display: block;
+}
+
+.header {
+  padding: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#songList {
+  padding: 0;
+  margin: 0;
+}
+
+#songList li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+#songList li:hover {
+  background: #111;
+}
+
+.thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+}
+
+.info span {
+  display: block;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+.cover {
+  width: 260px;
+  height: 260px;
+  margin: 40px auto 20px;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+#title {
+  text-align: center;
+}
+
+#artist {
+  text-align: center;
+  color: #aaa;
+}
+
+.progress {
+  height: 4px;
+  background: #333;
+  margin: 30px 20px;
+}
+
+#progress {
+  height: 4px;
+  width: 0%;
+  background: #1db954;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.controls button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: #1db954;
+  font-size: 22px;
+}
