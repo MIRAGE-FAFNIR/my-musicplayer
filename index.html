@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mini Spotify</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="home" class="screen active">
+  <div class="header">Songs</div>
+  <ul id="songList"></ul>
+</div>
+
+<div id="player" class="screen">
+  <div class="topbar">
+    <button onclick="back()">⬇</button>
+    <span>Now Playing</span>
+  </div>
+
+  <img id="cover" class="cover">
+
+  <h2 id="title"></h2>
+  <p id="artist"></p>
+
+  <div class="progress">
+    <div id="progress"></div>
+  </div>
+
+  <div class="controls">
+    <button onclick="prev()">⏮</button>
+    <button onclick="playPause()" id="play">▶</button>
+    <button onclick="next()">⏭</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
